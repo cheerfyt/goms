@@ -1,7 +1,7 @@
 golang ms package
 =================
 
-** copy from node ms package **
+**node ms package golang complete**
 
 - install: `go get -v -u github.com/tate-fan/goms`
 - test: `make test`
