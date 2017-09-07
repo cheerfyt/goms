@@ -21,9 +21,17 @@ func TestMs_2(t *testing.T) {
 }
 
 func TestMs_3(t *testing.T) {
-	if ms, _ := Ms("1d"); ms != 100000 {
+	if ms, _ := Ms("1d"); ms != 86400000 {
 		t.Error("1d test error")
 	} else {
 		t.Log("1d test pass")
+	}
+}
+
+func TestMs_4(t *testing.T) {
+	if ms, _ := Ms("1y"); ms != 31536000000 {
+		t.Error("1y test error")
+	} else {
+		t.Log("1y test pass")
 	}
 }

@@ -28,7 +28,7 @@ func Ms(val string) (float32, error) {
 	}
 	real, err := strconv.ParseFloat(match[1], 32)
 	if err != nil {
-		return 0.0, errors.New("parse error")
+		return 0.0, errors.New("parse to float error")
 	}
 	switch match[2] {
 	case "years", "year", "yrs", "yr", "y":
