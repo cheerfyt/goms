@@ -3,8 +3,8 @@ golang ms package
 
 **node ms package golang complete**
 
-- install: `go get -v -u github.com/tate-fan/goms`
-- test: `make test`
+- install: `go get -v -u github.com/cheerfyt/goms`
+- test: `go test ./`
 
 - usage:
 
@@ -13,11 +13,11 @@ golang ms package
 
   import (
       "fmt"
-      "github.com/tate-fan/goms"
+      "github.com/cheerfyt/goms"
   )
 
   func main() {
-      value, err := goms.Ms("100d")
+      value, err := goms.Parse("100d")
 
       if err != nil {
           panic(err.Error())
